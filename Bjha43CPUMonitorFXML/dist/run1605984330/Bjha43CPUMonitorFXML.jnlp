@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Bjha43CPUMonitorFXML.jnlp">
+  <information>
+    <title>Bjha43CPUMonitorFXML</title>
+    <vendor>Perfect Tommy</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Bjha43CPUMonitorFXML.jar" size="83676" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Bjha43CPUMonitorFXML" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="bjha43cpumonitorfxml.Bjha43CPUMonitorFXML"  name="Bjha43CPUMonitorFXML" />
+  <update check="always"/>
+</jnlp>

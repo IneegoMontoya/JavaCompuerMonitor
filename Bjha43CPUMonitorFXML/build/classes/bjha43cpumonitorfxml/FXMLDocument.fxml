@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="219.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bjha43cpumonitorfxml.FXMLDocumentController">
+    <children>
+      <GridPane hgap="5.0" prefHeight="219.0" prefWidth="362.0" style="-fx-background-color: grey; -fx-border-color: Red;" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <StackPane prefHeight="62.0" prefWidth="166.0" GridPane.rowSpan="3">
+               <children>
+                  <ImageView id="dialImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gauge.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="BOTTOM_CENTER" text="POWER" textAlignment="CENTER" textFill="#eb1026">
+                     <StackPane.margin>
+                        <Insets left="4.0" top="30.0" />
+                     </StackPane.margin>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <effect>
+                        <Bloom threshold="0.52" />
+                     </effect>
+                  </Label>
+                  <Label fx:id="label" text="--.--%" textFill="#f21c09">
+                     <StackPane.margin>
+                        <Insets bottom="10.0" />
+                     </StackPane.margin>
+                     <padding>
+                        <Insets bottom="35.0" left="15.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView id="hand" fx:id="handImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" rotate="-135.0">
+                     <image>
+                        <Image url="@hand.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowSpan="3">
+               <children>
+                  <TextField fx:id="textBox1" alignment="CENTER" style="-fx-background-color: YELLOW; -fx-border-color: BLACK;" text="--.--%">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor></TextField>
+                  <TextField fx:id="textBox2" alignment="CENTER" style="-fx-background-color: YELLOW; -fx-border-color: BLACK;" text="--.--%">
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></TextField>
+                  <TextField fx:id="textBox3" alignment="CENTER" style="-fx-background-color: YELLOW; -fx-border-color: BLACK;" text="--.--%">
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></TextField>
+                  <TextField fx:id="textBox4" alignment="CENTER" layoutX="10.0" layoutY="93.0" style="-fx-background-color: YELLOW; -fx-border-color: BLACK;" text="--.--%">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="recButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#recButtonAction" text="Record" HBox.hgrow="ALWAYS">
+                     <effect>
+                        <InnerShadow />
+                     </effect></Button>
+                  <Button fx:id="strtButton" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#startButtonAction" text="Start" HBox.hgrow="ALWAYS">
+                     <effect>
+                        <InnerShadow />
+                     </effect></Button>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>
